@@ -564,6 +564,60 @@
     color: #00abd9;
   }
 
+
+  #popup-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+  }
+
+  /* Popup box */
+  #popup-box {
+    background: white;
+    padding: 30px 60px;
+    border-radius: 0px;
+    text-align: center;
+    /* max-width: 400px; */
+    box-shadow: 0 0 15px rgba(0,0,0,0.3);
+  }
+
+  #popup-box h2 {
+    margin-bottom: 20px;
+  }
+  .sub-heading{
+    color: #3fbfb0;
+    font-size: 4.5rem;
+    line-height: 100%;
+    margin-top: 3rem;
+    font-weight: bold;
+  }
+  .tagline{
+    font-size: 33px;
+    color: #000000;
+  }
+
+  .buttonsyes{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 2rem;
+  }
+  .enddes{
+    color: #000;
+    font-size: 25px;
+  }
+  .logopopup{
+    width: 50%;
+  }
+
+
+
   /** RESPONSIVE MEDIA QUERY **/
   
   /* Small screens, such as smartphones */
@@ -606,6 +660,52 @@
     }
     #product{
       padding-top: 0px;
+    }
+    .footernav .container {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+    }
+    .footernav .ulfirst {
+        flex-direction: column;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    }
+    .footernav ul {
+        margin: 0;
+        padding: 0;
+    }
+
+    .sub-heading{
+      font-size: 3.5rem;
+    }
+    .disc{
+      width: 60%;
+    }
+    .logopopup{
+      width: 20%;
+    }
+
+    .sub-heading{
+      font-size:2.5rem;
+    }
+    .disc{
+      width: 60%;
+    }
+    .enddesimg{
+      width: 80%;
+    }
+    .yes-btn{
+      width: 30%;
+    }
+    .no-btn{
+      width: 30%;
+    }
+    .buttonsyes {
+      justify-content: space-evenly;
+    }
+    #popup-box{
+      max-width: 400px;
     }
   }
   
@@ -650,6 +750,20 @@
     #product{
       padding-top: 0px;
     }
+    .footernav .container {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+    }
+    .footernav .ulfirst {
+        flex-direction: column;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    }
+    .footernav ul {
+        margin: 0;
+        padding: 0;
+    }
   }
   
   /* Tablets in landscape mode and small desktops */
@@ -678,6 +792,15 @@
     }
     .productimg{
       top: -40%;
+    }
+    .sub-heading{
+      font-size: 3rem;
+    }
+    .disc{
+      width: 60%;
+    }
+    .enddesimg{
+      width: 60%;
     }
 
   }

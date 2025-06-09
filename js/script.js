@@ -2,7 +2,7 @@ $(document).ready(function() {
 
   // new WOW().init();
 
-    var counted = false;
+  var counted = false;
   $(window).on("scroll", function () {
     var oTop = $(".counter").offset().top - window.innerHeight;
     if (!counted && $(window).scrollTop() > oTop) {
@@ -32,6 +32,41 @@ $(document).ready(function() {
       counted = true;
     }
   });
+
+  // popup logic
+
+   if (localStorage.getItem("popupAccepted") === "true") {
+      $("#popup-overlay").hide();
+    } else {
+      $("#popup-overlay").show();
+    }
+
+    $(".yes-btn").click(function () {
+      localStorage.setItem("popupAccepted", "true");
+      $("#popup-overlay").fadeOut();
+    });
+
+    $(".no-btn").click(function () {
+      window.location.href = "https://www.google.com";
+    });
+
+    // Prevent user from closing popup with Esc or clicking outside
+    $(window).on('keydown', function (e) {
+      if (e.key === "Escape") {
+        e.preventDefault();
+      }
+    });
+
+    $(document).on('click', function (e) {
+      if (!$(e.target).closest("#popup-box").length) {
+        e.stopPropagation();
+      }
+    });
+
+
+
+
+
     // THiS JS IS USED OF SHOW AND HIDE MOBILE MENU
 
     $('#trigger-overlay').on('click', function(){
