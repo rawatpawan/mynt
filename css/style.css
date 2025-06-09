@@ -675,7 +675,9 @@
         margin: 0;
         padding: 0;
     }
-
+    .heading-one {
+        font-size: 2rem;
+    }
     .sub-heading{
       font-size: 3.5rem;
     }
@@ -763,6 +765,40 @@
     .footernav ul {
         margin: 0;
         padding: 0;
+    }
+    .heading-one {
+        font-size: 2rem;
+    }
+    .sub-heading{
+      font-size: 3.5rem;
+    }
+    .disc{
+      width: 60%;
+    }
+    .logopopup{
+      width: 20%;
+    }
+
+    .sub-heading{
+      font-size:2.5rem;
+    }
+    .disc{
+      width: 60%;
+    }
+    .enddesimg{
+      width: 80%;
+    }
+    .yes-btn{
+      width: 30%;
+    }
+    .no-btn{
+      width: 30%;
+    }
+    .buttonsyes {
+      justify-content: space-evenly;
+    }
+    #popup-box{
+      max-width: 400px;
     }
   }
   
