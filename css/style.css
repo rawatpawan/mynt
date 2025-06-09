@@ -195,7 +195,10 @@
     color: #000;
   }
   .desktopMenu .navbar-nav{
-    width: 50%;
+    width: 100%;
+  }
+  .desktopMenu .nav-item{
+    margin: auto 2rem;
   }
   
   /* Mobile menu style ENDs here  */
@@ -482,8 +485,84 @@
     font-style: normal;
   }
 
+  .products-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    align-items: stretch;
+  }
 
+  .product-item {
+    display: flex;
+    padding: 5px;
+    text-align: center;
 
+  }
+  .commonDiv{
+    position: relative;
+    background-color: #e6e7e8;
+    border-radius: 30px ;
+    padding: 70px 0 10px 0 !important;
+    margin-top: 210px !important;
+  }
+
+  .productimg{
+    width: 100%;
+    position: absolute;
+    left: 42%;
+    transform: translateX(-50%);
+    top: -50%;
+  }
+  .product-content{
+    padding: 1.3rem;
+  }
+  .product-content h5{
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 100%;
+    margin-top: 1.2rem; 
+  }
+  .product-content p{
+    color: #000;
+    font-size: 1.1rem;
+  }
+  .title-one{
+    color: #fa005f;
+  }
+  .productOne{
+    border: 5px solid #fa005f;
+  }
+  .productTwo{
+    border: 5px solid #ffd900;
+  }
+  .productThree{
+    border: 5px solid #fb1600;
+  }
+  .productFour{
+    border: 5px solid #00f6fa;
+  }
+  .productFive{
+    border: 5px solid #3ddc1e;
+  }
+  .productSix{
+    border: 5px solid #1ac9f8;
+  }
+  .title-two{
+    color: #ffb400;
+  }
+  .title-three{
+    color: #fb1600;
+  }
+  .title-four{
+    color: #00bad0;
+  }
+  .title-five{
+    color: #1db400;
+  }
+  .title-six{
+    color: #00abd9;
+  }
 
   /** RESPONSIVE MEDIA QUERY **/
   
@@ -502,7 +581,7 @@
     .mynboximage{
       margin-left: 0rem;
     }
-        .abouticon img {
+    .abouticon img {
         width: 60px;
         height: 60px;
     }
@@ -511,6 +590,22 @@
     }
     .missionvission {
       grid-template-columns: 1fr; /* 1 Column on mobile */
+    }
+    .products-grid {
+      grid-template-columns: 1fr;
+    }
+    #revolution h2{
+      font-size: 2.5rem;
+    }
+    #aboutus h2{
+      font-size: 1rem;
+    }
+    #myntBlack h2{
+      font-size: 30px;
+      line-height: 150%;
+    }
+    #product{
+      padding-top: 0px;
     }
   }
   
@@ -539,6 +634,22 @@
     .missionvission {
       grid-template-columns: 1fr; /* 1 Column on mobile */
     }
+    .products-grid {
+      grid-template-columns: 1fr; 
+    }
+    #revolution h2{
+      font-size: 2.5rem;
+    }
+    #aboutus h2{
+      font-size: 1rem;
+    }
+    #myntBlack h2{
+      font-size: 30px;
+      line-height: 150%;
+    }
+    #product{
+      padding-top: 0px;
+    }
   }
   
   /* Tablets in landscape mode and small desktops */
@@ -553,7 +664,7 @@
       width: 80%;
     }
     .desktopMenu .navbar-nav {
-          width: 80%;
+          width: 100%;
       }
       .warningText{
         font-size: 1.2rem;
@@ -562,10 +673,12 @@
       margin-left: 0rem;
     }
     #revolution h2{
-      color: #3edc1e;
-      font-size: 4rem;
-  }
-
+        color: #3edc1e;
+        font-size: 4rem;
+    }
+    .productimg{
+      top: -40%;
+    }
 
   }
   
