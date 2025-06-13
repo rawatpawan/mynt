@@ -74,7 +74,7 @@
     padding: 0px;
     font-weight: 300;
     font-size: 1.2rem;
-    line-height: 150%;
+    line-height: 24px;
     letter-spacing: .1px;
   }
   
@@ -268,6 +268,8 @@
     font-size: 50px;
     line-height: 33px;
     font-weight: 500;
+    color: #fd0c59;
+    margin-top: 4rem;
   }
 
   #revolution{
@@ -283,6 +285,7 @@
   #revolution h2{
     color: #3edc1e;
     font-size: 4.5rem;
+    font-weight: normal;
   }
 
   .video-container {
@@ -293,7 +296,9 @@
     gap: 10px;
     
   }
-
+  #aboutus{
+    padding-top: 0px;
+  }
   #aboutus h2{
     color: #330a70;
     font-size: 2.5rem;
@@ -419,7 +424,7 @@
     margin: 0;
   }
   #footer ul li{
-    font-family: 'Borlow', 'sans-serif';
+    font-family: 'Barlow', 'sans-serif';
     color: #ffffff;
     margin: 0px;
     padding: 0px;
@@ -427,7 +432,7 @@
   }
   #footer ul li a{
     color: #ffffff;
-    font-family: 'Borlow', 'sans-serif';
+    font-family: 'Barlow', 'sans-serif';
     font-size: 1rem;
   }
   #footer .form-control-lg{
@@ -436,7 +441,7 @@
     border-bottom: 1px solid #fd0c59;
     border-radius: 0;
     outline: none;
-    font-family: 'Borlow', 'sans-serif';
+    font-family: 'Barlow', 'sans-serif';
   
   }
   #contactus{
@@ -500,18 +505,17 @@
   }
   .commonDiv{
     position: relative;
-    background-color: #e6e7e8;
+    background: #e6e7e8;
     border-radius: 30px ;
     padding: 70px 0 10px 0 !important;
-    margin-top: 210px !important;
+    margin-top: 340px !important;
   }
 
   .productimg{
-    width: 100%;
     position: absolute;
-    left: 42%;
+    left: 40%;
     transform: translateX(-50%);
-    top: -50%;
+    top: -75%;
   }
   .product-content{
     padding: 1.3rem;
@@ -521,7 +525,7 @@
     font-weight: bold;
     text-transform: uppercase;
     line-height: 100%;
-    margin-top: 1.2rem; 
+    margin-top: 2.5rem; 
   }
   .product-content p{
     color: #000;
@@ -564,6 +568,57 @@
     color: #00abd9;
   }
 
+
+  .productOne:hover {
+    background-image: url('../images/lychee-bg.png');
+    background-size: cover;
+    background-position: center;
+    background-color: transparent;
+  }
+
+  .productTwo:hover {
+    background-image: url('../images/mango-bg.png');
+    background-size: cover;
+    background-position: center;
+    background-color: transparent;
+  }
+
+  .productThree:hover {
+    background-image: url('../images/sweet-bg.png');
+    background-size: cover;
+    background-position: center;
+    background-color: transparent;
+  }
+
+  .productFour:hover {
+    background-image: url('../images/silky-bg.png');
+    background-size: cover;
+    background-position: center;
+    background-color: transparent;
+  }
+
+  .productFive:hover {
+    background-image: url('../images/excitement-bg.png');
+    background-size: cover;
+    background-position: center;
+    background-color: transparent;
+  }
+
+  .productSix:hover {
+    background-image: url('../images/silky-bg.png');
+    background-size: cover;
+    background-position: center;
+    background-color: transparent;
+  }
+    .commonDiv {
+      transition: background 0.3s ease;
+    }
+
+    .commonDiv:hover .product-content {
+      visibility: hidden;
+      opacity: 0;
+      transition: opacity 0.3s ease;
+    }
 
   #popup-overlay {
     position: fixed;
@@ -709,6 +764,13 @@
     #popup-box{
       max-width: 400px;
     }
+    .productimg{
+      top: -50%;
+      width: 100%;
+    }
+    .commonDiv{
+      margin-top: 210px !important;
+    }
   }
   
   /* Tablets in portrait mode */
@@ -800,6 +862,13 @@
     #popup-box{
       max-width: 400px;
     }
+    .productimg{
+      top: -50%;
+      width: 100%;
+    }
+    .commonDiv{
+      margin-top: 210px !important;
+    }
   }
   
   /* Tablets in landscape mode and small desktops */
@@ -828,6 +897,8 @@
     }
     .productimg{
       top: -40%;
+      width: 100%;
+      left: 42%;
     }
     .sub-heading{
       font-size: 3rem;
@@ -838,7 +909,15 @@
     .enddesimg{
       width: 60%;
     }
-
+    .desktopMenu .nav-item{
+      margin: auto 1rem;
+    }
+    .commonDiv{
+      margin-top: 210px !important;
+    }
+    .product-content h5{
+      margin-top: 1rem;
+    }
   }
   
   /* Standard desktops and laptops */
