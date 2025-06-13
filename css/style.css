@@ -480,7 +480,7 @@
   .copyright-text{
     color: #fd0c59;
     font-size: 16px;
-    font-family: 'sofia', 'sans-serif';
+    font-family: 'Barlow', 'sans-serif';
 
   }
 
@@ -671,7 +671,10 @@
     width: 50%;
   }
 
-
+ul.d-flex.ulfirst {
+    margin-left: -6rem;
+    padding-left: 0;
+}
 
   /** RESPONSIVE MEDIA QUERY **/
   
@@ -771,6 +774,10 @@
     .commonDiv{
       margin-top: 210px !important;
     }
+    ul.d-flex.ulfirst {
+        margin-left: 0;
+        padding-left: 0;
+    }
   }
   
   /* Tablets in portrait mode */
@@ -868,6 +875,10 @@
     }
     .commonDiv{
       margin-top: 210px !important;
+    }
+    ul.d-flex.ulfirst {
+        margin-left: 0;
+        padding-left: 0;
     }
   }
   
