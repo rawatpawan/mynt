@@ -198,7 +198,7 @@
     width: 100%;
   }
   .desktopMenu .nav-item{
-    margin: auto 2rem;
+    margin: auto 1rem;
   }
   
   /* Mobile menu style ENDs here  */
@@ -238,6 +238,7 @@
     padding-bottom: 10px;
     width: 98%;
     margin: auto;
+    border-top: 5px solid black;
   }
   .warningText{
     color: #000000;
@@ -263,6 +264,7 @@
 
   #myntBlack{
     background: #000;
+    padding: 40px 0;
   }
     #myntBlack h2{
     font-size: 50px;
@@ -322,8 +324,8 @@
     font-size: 2rem;
   }
   .abouticon img{
-    width: 160px;
-    height: 160px;
+    width: 150px;
+    height: 150px;
   }
   .abouticon li{
     text-align: center;
@@ -417,6 +419,7 @@
     display: inline;
     font-weight: 600;
     font-size: 1.8rem;
+    font-family: 'Barlow', sans-serif;
   }
   #footer ul{
     list-style: none;
@@ -447,7 +450,9 @@
   #contactus{
     font-size: 1rem;
   }
-
+  #footer p{
+    font-family: 'Barlow', sans-serif;
+  }
   #footer input::placeholder {
     color: #ffffff; 
     font-size: 1.1rem;
@@ -456,6 +461,7 @@
     background: #fd0c59;
     padding: 1rem 2.5rem;
     color: #fff;
+    font-family: 'Barlow', sans-serif;
 
   }
   .footernav{
@@ -508,17 +514,17 @@
     background: #e6e7e8;
     border-radius: 30px ;
     padding: 70px 0 10px 0 !important;
-    margin-top: 340px !important;
+    margin-top: 300px !important;
   }
 
   .productimg{
     position: absolute;
     left: 40%;
     transform: translateX(-50%);
-    top: -75%;
+    top: -70%;
   }
   .product-content{
-    padding: 1.3rem;
+    padding: 1rem;
   }
   .product-content h5{
     font-size: 2.5rem;
