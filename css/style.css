@@ -512,11 +512,16 @@
   .commonDiv{
     position: relative;
     background: #e6e7e8;
-    border-radius: 30px ;
-    padding: 70px 0 10px 0 !important;
+    border-radius: 35px ;
+    padding: 70px 0 90px 0 !important;
     margin-top: 300px !important;
   }
-
+  .myntImage{
+    position: absolute;
+    bottom: 20px; 
+    left: 50%;
+    transform: translateX(-50%);
+  }
   .productimg{
     position: absolute;
     left: 40%;

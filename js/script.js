@@ -1,6 +1,6 @@
 $(document).ready(function() {
 
-  // new WOW().init();
+  new WOW().init();
 
   var counted = false;
   $(window).on("scroll", function () {
