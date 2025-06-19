@@ -35,35 +35,44 @@ $(document).ready(function() {
 
   // popup logic
 
-   if (localStorage.getItem("popupAccepted") === "true") {
-      $("#popup-overlay").hide();
-    } else {
-      $("#popup-overlay").show();
+  if (sessionStorage.getItem("popupAccepted") === "true") {
+    $("#popup-overlay").hide();
+  } else {
+    $("#popup-overlay").show();
+  }
+
+  $(".yes-btn").click(function () {
+    sessionStorage.setItem("popupAccepted", "true");
+    $("#popup-overlay").fadeOut();
+  });
+
+  $(".no-btn").click(function () {
+    window.location.href = "https://www.google.com";
+  });
+
+  // Prevent user from closing popup with Esc or clicking outside
+  $(window).on('keydown', function (e) {
+    if (e.key === "Escape") {
+      e.preventDefault();
     }
+  });
 
-    $(".yes-btn").click(function () {
-      localStorage.setItem("popupAccepted", "true");
-      $("#popup-overlay").fadeOut();
+  $(document).on('click', function (e) {
+    if (!$(e.target).closest("#popup-box").length) {
+      e.stopPropagation();
+    }
+  });
+
+
+  /***
+   * Video slider show 
+   ***/
+    $('.video-item').on('click', function () {
+        var videoSrc = $(this).data('video');
+        if (videoSrc) {
+            $('#mainVideo').attr('src', videoSrc)[0].play();
+        }
     });
-
-    $(".no-btn").click(function () {
-      window.location.href = "https://www.google.com";
-    });
-
-    // Prevent user from closing popup with Esc or clicking outside
-    $(window).on('keydown', function (e) {
-      if (e.key === "Escape") {
-        e.preventDefault();
-      }
-    });
-
-    $(document).on('click', function (e) {
-      if (!$(e.target).closest("#popup-box").length) {
-        e.stopPropagation();
-      }
-    });
-
-
 
 
 

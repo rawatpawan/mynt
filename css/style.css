@@ -231,7 +231,12 @@
   .desktopMenu .activenav {
       color: #fd0c59 !important;
   }
-
+  .desktopMenu a:hover {
+      color: #fd0c59;
+  }
+  .footernav a:hover {
+      color: #000000;
+  }
   .waringMessage{
     background: #ffffff;
     padding-top: 10px;
@@ -582,42 +587,42 @@
 
   .productOne:hover {
     background-image: url('../images/lychee-bg.png');
-    background-size: cover;
+    background-size: inherit;
     background-position: center;
     background-color: transparent;
   }
 
   .productTwo:hover {
     background-image: url('../images/mango-bg.png');
-    background-size: cover;
+    background-size: inherit;
     background-position: center;
     background-color: transparent;
   }
 
   .productThree:hover {
     background-image: url('../images/sweet-bg.png');
-    background-size: cover;
+    background-size: inherit;
     background-position: center;
     background-color: transparent;
   }
 
   .productFour:hover {
     background-image: url('../images/silky-bg.png');
-    background-size: cover;
+    background-size: inherit;
     background-position: center;
     background-color: transparent;
   }
 
   .productFive:hover {
     background-image: url('../images/excitement-bg.png');
-    background-size: cover;
+    background-size: inherit;
     background-position: center;
     background-color: transparent;
   }
 
   .productSix:hover {
     background-image: url('../images/silky-bg.png');
-    background-size: cover;
+    background-size: inherit;
     background-position: center;
     background-color: transparent;
   }
@@ -670,6 +675,8 @@
   }
 
   .buttonsyes{
+    width: 80%;
+    margin: auto;
     display: flex;
     justify-content: space-around;
     margin-top: 2rem;
@@ -682,11 +689,16 @@
     width: 50%;
   }
 
-ul.d-flex.ulfirst {
-    margin-left: -6rem;
-    padding-left: 0;
-}
-
+  ul.d-flex.ulfirst {
+      margin-left: -6rem;
+      padding-left: 0;
+  }
+  .enddesimg{
+    width: 90%;
+  }
+  .video-item:hover{
+    cursor: pointer;
+  }
   /** RESPONSIVE MEDIA QUERY **/
   
   /* Small screens, such as smartphones */
