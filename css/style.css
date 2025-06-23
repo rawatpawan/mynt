@@ -652,7 +652,7 @@
   /* Popup box */
   #popup-box {
     background: white;
-    padding: 30px 60px;
+    padding: 30px 30px;
     border-radius: 0px;
     text-align: center;
     /* max-width: 400px; */
@@ -664,7 +664,7 @@
   }
   .sub-heading{
     color: #3fbfb0;
-    font-size: 4.5rem;
+    font-size: 3.5rem;
     line-height: 100%;
     margin-top: 3rem;
     font-weight: bold;
@@ -673,9 +673,17 @@
     font-size: 33px;
     color: #000000;
   }
-
+  .disc{
+    width: 70%;
+  }
+  .yes-btn{
+    width: 40%;
+  }
+  .no-btn{
+    width: 40%;
+  }
   .buttonsyes{
-    width: 80%;
+    width: 50%;
     margin: auto;
     display: flex;
     justify-content: space-around;
@@ -686,7 +694,7 @@
     font-size: 25px;
   }
   .logopopup{
-    width: 50%;
+    width: 40%;
   }
 
   ul.d-flex.ulfirst {
@@ -694,7 +702,7 @@
       padding-left: 0;
   }
   .enddesimg{
-    width: 90%;
+    width: 80%;
   }
   .video-item:hover{
     cursor: pointer;
@@ -720,9 +728,7 @@
         width: 60px;
         height: 60px;
     }
-    .abouticon h2{
-      font-size: 1rem;
-    }
+
     .missionvission {
       grid-template-columns: 1fr; /* 1 Column on mobile */
     }
@@ -733,7 +739,10 @@
       font-size: 2.5rem;
     }
     #aboutus h2{
-      font-size: 1rem;
+      font-size: 3.1rem;
+    }
+    .abouticon h2{
+      font-size: 1rem !important;
     }
     #myntBlack h2{
       font-size: 30px;
@@ -766,23 +775,23 @@
       width: 60%;
     }
     .logopopup{
-      width: 20%;
+      width: 70%;
     }
 
     .sub-heading{
       font-size:2.5rem;
     }
     .disc{
-      width: 60%;
+      width: 70%;
     }
     .enddesimg{
       width: 80%;
     }
     .yes-btn{
-      width: 30%;
+      width: 40%;
     }
     .no-btn{
-      width: 30%;
+      width: 40%;
     }
     .buttonsyes {
       justify-content: space-evenly;
@@ -822,9 +831,6 @@
         width: 60px;
         height: 60px;
     }
-    .abouticon h2{
-      font-size: 1rem;
-    }
     .missionvission {
       grid-template-columns: 1fr; /* 1 Column on mobile */
     }
@@ -835,7 +841,10 @@
       font-size: 2.5rem;
     }
     #aboutus h2{
-      font-size: 1rem;
+      font-size: 3.1rem;
+    }
+    .abouticon h2{
+      font-size: 1rem !important;
     }
     #myntBlack h2{
       font-size: 30px;
@@ -865,10 +874,10 @@
       font-size: 3.5rem;
     }
     .disc{
-      width: 60%;
+      width: 70%;
     }
     .logopopup{
-      width: 20%;
+      width: 70%;
     }
 
     .sub-heading{
@@ -881,10 +890,10 @@
       width: 80%;
     }
     .yes-btn{
-      width: 30%;
+      width: 40%;
     }
     .no-btn{
-      width: 30%;
+      width: 40%;
     }
     .buttonsyes {
       justify-content: space-evenly;
